@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
+          <nav className="hidden xl:flex items-center gap-5 xl:gap-6">
             {navLinks.map((link) => (
               <a 
                 key={link.name}
@@ -80,7 +80,7 @@ export const Navbar: React.FC = () => {
           </nav>
 
           {/* Live Open Status & Call CTA */}
-          <div className="hidden sm:flex items-center gap-3">
+          <div className="hidden xl:flex items-center gap-3">
             {/* Pulsing Open Badge */}
             <div className="hidden lg:flex items-center gap-2 bg-emerald-50 text-emerald-800 border border-emerald-200 px-3 py-1.5 rounded-full text-xs font-bold">
               <span className="relative flex h-2.5 w-2.5">
@@ -104,24 +104,19 @@ export const Navbar: React.FC = () => {
             {/* Main Phone Call CTA Button */}
             <a
               href={BUSINESS_INFO.phoneTel}
-              className="relative inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-black px-4 py-2.5 rounded-xl shadow-md shadow-brand-orange/20 hover:shadow-lg hover:shadow-brand-orange/30 transition-all transform hover:-translate-y-0.5 animate-pulse-subtle"
-            >
-              <div className="bg-white/15 p-1 rounded-lg">
-                <Phone className="w-4 h-4 text-white" />
-              </div>
-              <div className="text-left">
-                <span className="block text-[10px] uppercase font-bold text-white/90 tracking-wider leading-none">
-                  Call Ali Now
-                </span>
-                <span className="font-display font-extrabold text-sm text-white tracking-tight">
-                  {BUSINESS_INFO.phoneDisplay}
-                </span>
-              </div>
-            </a>
+  className="relative inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-black pl-3 pr-4 py-2.5 rounded-xl shadow-md shadow-brand-orange/20 hover:shadow-lg hover:shadow-brand-orange/30 transition-all transform hover:-translate-y-0.5 animate-pulse-subtle"
+>
+  <div className="bg-white/15 p-1.5 rounded-lg">
+    <Phone className="w-4 h-4 text-white" />
+  </div>
+  <span className="text-sm tracking-tight whitespace-nowrap">
+    Call Now
+  </span>
+</a>
           </div>
 
           {/* Mobile Menu Toggle */}
-          <div className="flex sm:hidden items-center gap-2">
+          <div className="flex xl:hidden items-center gap-2">
             <a
               href={BUSINESS_INFO.phoneTel}
               className="bg-brand-orange text-white p-2.5 rounded-xl font-bold flex items-center justify-center shadow-md"
