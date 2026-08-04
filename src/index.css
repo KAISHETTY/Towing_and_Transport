@@ -3,6 +3,8 @@
 @theme {
   --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-brand-navy: #1B3A5C;
+  --color-brand-orange: #E8590C;
 }
 
 @keyframes pulse-subtle {
