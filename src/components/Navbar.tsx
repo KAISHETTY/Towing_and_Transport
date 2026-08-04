@@ -154,13 +154,13 @@ export const Navbar: React.FC = () => {
             <span className="text-xs font-semibold text-slate-600">Avg ETA: 15-20 min</span>
           </div>
 
-          <div className="grid grid-cols-2 gap-2 pt-1">
+          <div className="grid grid-cols-2 gap-2.5 pt-1">
             {navLinks.map((link) => (
-              <a
+              
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-slate-800 font-semibold text-sm p-2.5 rounded-lg hover:bg-amber-50 hover:text-amber-700 transition-colors"
+                className="text-slate-800 font-semibold text-sm p-3 rounded-lg bg-slate-50 border border-slate-100 text-center hover:bg-brand-orange/10 hover:text-brand-orange transition-colors"
               >
                 {link.name}
               </a>
