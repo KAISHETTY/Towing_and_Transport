@@ -66,15 +66,15 @@ export const Navbar: React.FC = () => {
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden lg:flex items-center gap-6">
+          <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
             {navLinks.map((link) => (
-              <a
+              
                 key={link.name}
                 href={link.href}
-                className="text-sm font-semibold text-slate-700 hover:text-amber-600 transition-colors py-1 relative group"
+                className="text-[13px] xl:text-sm font-semibold text-slate-700 hover:text-brand-orange transition-colors py-1 whitespace-nowrap relative group"
               >
                 {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 group-hover:w-full transition-all duration-200"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-brand-orange group-hover:w-full transition-all duration-200"></span>
               </a>
             ))}
           </nav>
