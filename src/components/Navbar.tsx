@@ -45,17 +45,17 @@ export const Navbar: React.FC = () => {
                   referrerPolicy="no-referrer"
                 />
               ) : (
-                <div className="w-full h-full bg-gradient-to-br from-amber-500 via-orange-500 to-amber-600 flex items-center justify-center text-white font-black text-lg tracking-tighter">
+                <div className="w-full h-full bg-brand-navy flex items-center justify-center text-white font-black text-lg tracking-tighter">
                   ZT&T
                 </div>
               )}
             </div>
             <div>
               <div className="flex items-center gap-1.5">
-                <span className="font-display font-extrabold text-xl text-slate-900 tracking-tight leading-none group-hover:text-amber-600 transition-colors">
+                <span className="font-display font-extrabold text-xl text-slate-900 tracking-tight leading-none group-hover:text-brand-orange transition-colors">
                   Zacks Towing
                 </span>
-                <span className="bg-amber-400/20 text-amber-700 text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">
+                <span className="bg-brand-orange/15 text-brand-orange text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wider">
                   24/7
                 </span>
               </div>
@@ -104,16 +104,16 @@ export const Navbar: React.FC = () => {
             {/* Main Phone Call CTA Button */}
             <a
               href={BUSINESS_INFO.phoneTel}
-              className="relative inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 via-orange-500 to-amber-500 hover:from-amber-600 hover:to-orange-600 text-slate-950 font-black px-4 py-2.5 rounded-xl shadow-md shadow-amber-500/20 hover:shadow-lg hover:shadow-amber-500/30 transition-all transform hover:-translate-y-0.5 animate-pulse-subtle"
+              className="relative inline-flex items-center gap-2 bg-brand-orange hover:bg-brand-orange/90 text-white font-black px-4 py-2.5 rounded-xl shadow-md shadow-brand-orange/20 hover:shadow-lg hover:shadow-brand-orange/30 transition-all transform hover:-translate-y-0.5 animate-pulse-subtle"
             >
-              <div className="bg-slate-950/10 p-1 rounded-lg">
-                <Phone className="w-4 h-4 text-slate-950" />
+              <div className="bg-white/15 p-1 rounded-lg">
+                <Phone className="w-4 h-4 text-white" />
               </div>
               <div className="text-left">
-                <span className="block text-[10px] uppercase font-bold text-slate-900 tracking-wider leading-none">
+                <span className="block text-[10px] uppercase font-bold text-white/90 tracking-wider leading-none">
                   Call Ali Now
                 </span>
-                <span className="font-display font-extrabold text-sm text-slate-950 tracking-tight">
+                <span className="font-display font-extrabold text-sm text-white tracking-tight">
                   {BUSINESS_INFO.phoneDisplay}
                 </span>
               </div>
