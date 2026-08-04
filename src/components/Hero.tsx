@@ -8,10 +8,8 @@ export const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 
-          {/* Left Column - Copy & Triple CTAs */}
           <div className="lg:col-span-7 space-y-6">
 
-            {/* Status Pill */}
             <div className="inline-flex items-center gap-2 bg-slate-50 border border-slate-200 px-3.5 py-1.5 rounded-full">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
@@ -24,7 +22,6 @@ export const Hero: React.FC = () => {
               <span className="text-xs font-bold text-slate-500">Avg 15 Min Arrival</span>
             </div>
 
-            {/* Headline */}
             <h1 className="font-display font-black text-4xl sm:text-5xl lg:text-6xl text-slate-950 tracking-tight leading-[1.08]">
               STRANDED? <br />
               <span className="text-brand-navy">
@@ -32,19 +29,13 @@ export const Hero: React.FC = () => {
               </span>
             </h1>
 
-            {/* Subheadline */}
             <p className="text-lg sm:text-xl font-medium text-slate-600 leading-relaxed max-w-2xl">
               24/7 Professional Towing & Emergency Roadside Rescue across Dallas, Plano, Prosper, Celina, Allen, Richardson & Van Alstyne. Owned & operated by <span className="font-bold text-slate-900">Ali</span> with over 10 years of trusted experience.
             </p>
 
-            {/* Triple CTA Buttons */}
             <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
 
-              {/* Call CTA */}
-              
-                href={BUSINESS_INFO.phoneTel}
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-3 bg-brand-navy hover:bg-brand-navy/90 text-white font-black text-base px-6 py-4 rounded-2xl shadow-lg shadow-brand-navy/20 hover:shadow-xl transition-all transform hover:-translate-y-0.5 group"
-              >
+              <a href={BUSINESS_INFO.phoneTel} className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-3 bg-brand-navy hover:bg-brand-navy/90 text-white font-black text-base px-6 py-4 rounded-2xl shadow-lg shadow-brand-navy/20 hover:shadow-xl transition-all transform hover:-translate-y-0.5 group">
                 <div className="bg-white/15 p-2 rounded-xl group-hover:scale-110 transition-transform">
                   <Phone className="w-5 h-5" />
                 </div>
@@ -53,29 +44,18 @@ export const Hero: React.FC = () => {
                 </span>
               </a>
 
-              {/* WhatsApp CTA */}
-              
-                href={BUSINESS_INFO.whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all"
-              >
+              <a href={BUSINESS_INFO.whatsappLink} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm px-5 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
                 <MessageSquare className="w-5 h-5 fill-current" />
                 <span>WhatsApp Us</span>
               </a>
 
-              {/* Text SMS CTA */}
-              
-                href={BUSINESS_INFO.smsLink}
-                className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-900 text-white font-bold text-sm px-5 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all"
-              >
+              <a href={BUSINESS_INFO.smsLink} className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-900 text-white font-bold text-sm px-5 py-4 rounded-2xl shadow-md hover:shadow-lg transition-all">
                 <Send className="w-4 h-4" />
                 <span>Text (SMS)</span>
               </a>
 
             </div>
 
-            {/* Quick Feature Badges Strip */}
             <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3 border-t border-slate-200 mt-2">
               <div className="flex items-center gap-2.5">
                 <div className="bg-slate-100 p-2 rounded-xl text-brand-navy">
@@ -120,11 +100,9 @@ export const Hero: React.FC = () => {
 
           </div>
 
-          {/* Right Column - Hero Visual Card & Truck Image */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900 group">
 
-              {/* Truck Picture */}
               <img
                 src={BUSINESS_INFO.heroTruckImage}
                 alt="Zacks Towing Flatbed Truck"
@@ -132,10 +110,8 @@ export const Hero: React.FC = () => {
                 referrerPolicy="no-referrer"
               />
 
-              {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
 
-              {/* Floating Live Dispatch Badge */}
               <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-2xl shadow-lg border border-slate-100 flex items-center gap-2.5">
                 <div className="bg-brand-navy text-white p-1.5 rounded-xl">
                   <Sparkles className="w-4 h-4" />
@@ -151,7 +127,6 @@ export const Hero: React.FC = () => {
                 </div>
               </div>
 
-              {/* Bottom Card Detail Overlay */}
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-slate-100 shadow-xl space-y-2">
                 <div className="flex items-center justify-between">
                   <span className="text-xs font-bold text-brand-navy uppercase tracking-wider">
@@ -167,10 +142,7 @@ export const Hero: React.FC = () => {
                     <CheckCircle2 className="w-4 h-4 text-emerald-500" />
                     Upfront Transparent Rates
                   </span>
-                  
-                    href={BUSINESS_INFO.phoneTel}
-                    className="font-bold text-brand-navy underline"
-                  >
+                  <a href={BUSINESS_INFO.phoneTel} className="font-bold text-brand-navy underline">
                     Call Now
                   </a>
                 </div>
