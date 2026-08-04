@@ -124,7 +124,7 @@ export const Navbar: React.FC = () => {
           <div className="flex sm:hidden items-center gap-2">
             <a
               href={BUSINESS_INFO.phoneTel}
-              className="bg-amber-500 text-slate-950 p-2.5 rounded-xl font-bold flex items-center justify-center shadow-md"
+              className="bg-brand-orange text-white p-2.5 rounded-xl font-bold flex items-center justify-center shadow-md"
             >
               <Phone className="w-5 h-5" />
             </a>
