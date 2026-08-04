@@ -1,0 +1,6 @@
+{
+  "name": "Zacks Towing & Transportation",
+  "description": "24/7 Roadside Assistance & Towing in North Texas — Fast 15-min response for towing, jump starts, lockouts, flat tires, fuel delivery & winch-outs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
