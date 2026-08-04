@@ -68,7 +68,7 @@ export const Navbar: React.FC = () => {
           {/* Desktop Nav Links */}
           <nav className="hidden lg:flex items-center gap-5 xl:gap-6">
             {navLinks.map((link) => (
-              
+              <a 
                 key={link.name}
                 href={link.href}
                 className="text-[13px] xl:text-sm font-semibold text-slate-700 hover:text-brand-orange transition-colors py-1 whitespace-nowrap relative group"
@@ -156,7 +156,7 @@ export const Navbar: React.FC = () => {
 
           <div className="grid grid-cols-2 gap-2.5 pt-1">
             {navLinks.map((link) => (
-              
+              <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
